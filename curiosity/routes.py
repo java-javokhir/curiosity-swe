@@ -107,7 +107,7 @@ If you did not make this request then simply ignore this email and no changes wi
 ''')
 
     # Create the SendGrid client
-    sg = sendgrid.SendGridAPIClient(api_key='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')
+    sg = sendgrid.SendGridAPIClient(api_key='')
 
     # Create the email message
     message = Mail(
