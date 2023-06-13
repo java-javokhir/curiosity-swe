@@ -9,6 +9,8 @@ from curiosity.models import User, Post
 from flask_login import login_user, current_user, logout_user, login_required
 import sendgrid
 from sendgrid.helpers.mail import Mail
+from python_http_client.exceptions import HTTPError
+
 
 @app.route("/")
 @app.route("/home")
@@ -116,12 +118,12 @@ If you did not make this request then simply ignore this email and no changes wi
     )
 
     # Send the email
-    response = sg.send(message)
+    try:
+        response = sg.send(message)
+    except HTTPError as e:
+        print(e.to_dict)
 
-    if response.status_code == 202:
-        return 'Email sent successfully!'
-    else:
-        return 'Failed to send email'
+
 
 
 @app.route("/reset_password", methods=['GET', 'POST'])
