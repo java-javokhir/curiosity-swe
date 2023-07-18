@@ -6,7 +6,14 @@
                 <div class="text-center">
                     <h1 class="mx-auto my-0 text-uppercase">CURIOSITY</h1>
                     <h2 class="text-white-50 mx-auto mt-2 mb-5">The place where you start your journey into the </h2>
-                    <a class="btn btn-primary" href="#about">Get Started</a>
+                    <div class="container">
+                        <form action="/results" method="POST" id="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="query" placeholder="Enter your search query">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -26,4 +33,5 @@
             </div>
         </div>
     </section>
+
 {% endblock content %}
