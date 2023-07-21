@@ -1,5 +1,218 @@
 {% extends "layout.html" %}
 {% block content %}
+<!DOCTYPE HTML>
+<html lang="en">
+<script></script>
+<style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+p.center {
+  text-align: center;
+  font-size: 200%;
+  color: white;
+  border: 4px solid yellow;
+  padding: 35px;
+}
+
+p.large {
+  font-size: 300%;
+  border: 4px solid yellow;
+  padding: 35px;
+}
+
+p.center2 {
+  text-align: center;
+  font-size: 150%;
+  border: 4px solid yellow;
+  padding: 35px;
+}
+
+p.center3 {
+  text-align: center;
+  font-size: 150%;
+  border: 4px solid yellow;
+  padding: 35px;
+}
+
+p.center4 {
+  text-align: center;
+  font-size: 150%;
+  border: 4px solid yellow;
+  padding: 35px;
+}
+
+input[type=text] {
+  width: 100px;
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+}
+input[type=text]:focus {
+  width: 250px;
+}
+
+img {
+  border-radius: 50%;
+  filter: brightness(110%)
+}
+
+table {
+  border-collapse: collapse;
+  font-family: Verdana, Geneva, sans-serif; font-size: 16px; font-style: normal;"
+  text-align: center;
+  text-shadow: 2px 2px 1px #000000;
+  background-color: #FFCC66 ;
+  margin-left:auto;margin-right:auto;">
+}
+
+h1, h2 {
+  color: White;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+h3 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+  color: white;
+}
+
+li {
+   color: white;
+   text-shadow: 2px 2px 4px #000000;
+}
+
+
+body {
+  background-image: url: ('C:\Users\alessandro\STOCS\curiosity\static\assets\img\background.jpg') ;
+}
+
+.nav {
+  background-color: #000080 ;
+  list-style-type:none;
+  text-align:center;
+  text-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.nav2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: center;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+
+.nav li {
+  text-shadow: 2px 2px 4px white;
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+
+table, th, td {
+  border:0.5px solid black;
+  color: white;
+}
+
+</style>
+
+<head>
+<style>
+
+nav2 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 4s;
+}
+
+nav2 hover: {
+  width: 300px;
+}
+
+
+</style>
+<title>Results</title>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hamburger").click(function(){
+    $("#menu").slideToggle("slow");
+  });
+});
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+
+</script>
+<style>
+
+#flip, #panel {
+  padding: 5px;
+  text-align: center;
+  background-color: tomato;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button5").click(function(){
+    $("#div11").fadeToggle();
+    $("#div22").fadeToggle("slow");
+    $("#div33").fadeToggle(3000);
+  });
+});
+</script>
+
+
+<button5><\button5>
+
+<div id="div11" img src="" width=120 height=120 alt="PhotoSplitPL" class="center"></div>
+<br>
+<div id="div22" img src="" width=120 height=120 alt="PhotoSaarbrucken" class="center"></div>
+<br>
+<div id="div33" img src="" width=120 height=120 alt="PhotoBarcelona" class="center"></div>
+
+<ul class="nav";>
+  <li><a href="#CV">Video</a></li>
+  <li><a href="#Website">Podcast</a></li>
+  <li><a href="#info">Papers</a></li>
+  <li><a href="#Contact">Books</a></li>
+</ul>
+
+<p class="nav2">Scroll down to see your results!</p>
+
     <header class="masthead">
         <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
             <div class="d-flex justify-content-center">
@@ -11,18 +224,133 @@
                     </iframe>
             </div>
         </div>
+
+  <span>Menu</span>
+  <button id="hamburger">&#9776;</button>
     </header>
+
+<div id="menu">
+  <ul>
+    <a href="#centerl"><li>Your section</li></a>
+    <a href="#center"><li>History</li></a>
+    <a href="#center2"><li>Adding on your list</li></a>
+    <a href="#center3"><li>Elements removed</li></a>
+    <a href="#center4"><li>Projects</li></a>
+  </ul>
+</div>
+
+<div style="text-align: center;">
+<img src="file:///C:/Users/alessandro/OneDrive/Desktop/Lectures%20from%20DTM/Web%20and%20mobile/img%20for%20html/Photo.jpg" width=120 height=120 alt="Photo" class="center";>
+</div>
+<body bgcolor="blue"; style= "font-family: Verdana, Geneva, sans-serif; font-size: 16px; font-style: normal;">
+<h1 style="background-color: DodgerBlue; color:White;text-align: center;">Curiosity</h1>
+<h2 style="border:2px solid SlateBlue; background-color: dodgerblue;text-align: center;">Choose your favourite source of knowledge!</h2>
+
+<div1></div1>
+
+Search: <input type="text"; name="search">
+
+<div style="color:white;"id="flip">To insert something</div>
+<div style="color: white;"id="panel">To insert something</div>
+
+
+
+<div2>
+<div class="center";>
+<img src="file:///C:/Users/alessandro/OneDrive/Desktop/Lectures%20from%20DTM/Web%20and%20mobile/img%20for%20html/loghi.png"class="center";width=400 height=200; alt="social">
+<div>
+</div2>
+<div class="text-center">
+<a href="https://www.linkedin.com/in/alessandro-lupo-804433194/">
+<button id="b1">Linkedin</button></a>
+</div>
+<div class="text-center">
+<a href="https://www.facebook.com/Alessandro.Lupo6/">
+<button>Facebook</button></a>
+</div>
+<div class="text-center">
+<a href="https://www.instagram.com/alelupo21/">
+<button>Instagram</button></a>
+</div>
+
+<p class="center large" id="centerl"> To insert something</p>
+
+<h3 style="border:2px solid SlateBlue; background-color: dodgerblue; color: white;text-align: center;"><img src="file:///C:/Users/alessandro/OneDrive/Desktop/Lectures%20from%20DTM/Web%20and%20mobile/img%20for%20html/work.jpg"width=70 height=60; alt="work">Videos</h3>
+<ul style="color:DodgerBlue;">
+   <li><strong>To insert something</strong></li>
+   <p>To insert something
+   <li><strong>To insert something</strong></li>
+   <p>To insert something
+   <li><strong>T</strong></li>
+   <p>
+   <li><strong></strong></li>
+   <p>
+</ul>
+
+<table>
+
+<p class="center" id="center"> Podcasts</p>
+
+<h3 style="border:2px solid SlateBlue; background-color: dodgerblue; color: white;text-align: center;"><img src="t" width=70 height=60; alt="books">Podcasts</h3>
+
+<ul style="color:DodgerBlue;">
+   <li><img src="t" width=70 height=60;" alt="t"><strong>T</strong></li>
+   <p>T<br>
+   <a href="t"><button>Bu</button></a></p>
+
+   <li><img src="t" width=70 height=60;"alt="t"><strong>T</strong></li>
+   <p> <br>
+   <a href="t"><button>Bu</button></a></p>
+
+   <li><img src="t" width=70 height=60;"alt="t"><strong>t</strong></li>
+   <p>T<br>
+   <a href="t"><button>T</button></a></p>
+
+   <li><img src="t" width=70 height=60;"alt="t"><strong>t</strong></li>
+   <p> T<br>
+   <a href="t"><button>T</button></a></p>
+</ul>
+
+<p class="center2" id ="center2"> T</p>
+
+<h3 style="border:2px solid SlateBlue; background-color: dodgerblue; color: white;text-align: center;"><img src="file:///C:/Users/alessandro/OneDrive/Desktop/Lectures%20from%20DTM/Web%20and%20mobile/laptop.jpg" width=70 height=60;"alt="Laptop">Papers</h3>
+<ul style="color:DodgerBlue;">
+   <li>T</li>
+   <li>T</li>
+   <li>T</li>
+   <li>T</li>
+</ul>
+
+<p class="center3" id ="center3">T</p>
+
+<h3 style="border:2px solid SlateBlue; background-color: dodgerblue;color: white ;text-align: center;"><img src="file:///C:/Users/alessandro/OneDrive/Desktop/World.jpg" width=70 height=60;" alt="world">Books</h3>
+
+
+<p class="center4" id ="center4">T</p>
+
+<h3 style="border:2px solid SlateBlue; background-color: dodgerblue; color: white ;text-align: center;"><img src="file:///C:/Users/alessandro/OneDrive/Desktop/Personal.jpg" width=70 height=60;" alt="Reading">Projects</h3>
+<ul style="color:DodgerBlue;">
+
+<button5>Bu</button5>
+
+<div id="div11" img src="to insert" width=120 height=120 alt="To insert" class="center"></div>
+<br>
+<div id="div22" img src=" " width=120 height=120 alt="To insert" class="center"></div>
+<br>
+<div id="div33" img src=" " width=120 height=120 alt="To insert" class="center"></div>
+
+   <li>T</li>
+
+
+</ul>
+<html>
+
+
 
     <section class="about-section text-center" id="about">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8">
-                    <h2 class="text-white mb-4">Built with Bootstrap 5</h2>
-                    <p class="text-white-50">
-                        Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-                        <a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>
-                        The theme is open source, and you can use it for any purpose, personal or commercial.
-                    </p>
                 </div>
             </div>
             <img class="img-fluid" src="../static/assets/img/ipad.png" alt="..." />
