@@ -23,13 +23,7 @@
              {% endif %}
         >
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand"
-                        {% if title %}
-                            href="#page-top"
-                        {% else %}
-                            href="{{ url_for('main.home') }}"
-                        {% endif %}
-                >Curiosity</a>
+                <a class="navbar-brand" href="{{ url_for('main.home') }}">Curiosity</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -44,6 +38,7 @@
                             <a class="nav-item nav-link" href="{{ url_for('users.register') }}">Register</a>
                             <a class="nav-item nav-link" href= "http://localhost:63342/STOCS/curiosity/templates/About_us.html?_ijt=3r0grs9bdmolp76un3bpmeesi&_ij_reload=RELOAD_ON_SAVE" >About us</a>
                         {% endif %}
+                            <a class="nav-item nav-link" href="{{ url_for('main.about') }}">About Us</a>
                     </ul>
                 </div>
             </div>
