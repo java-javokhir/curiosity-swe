@@ -11,3 +11,8 @@ def home():
     query = request.form['query']
     if query:
         return redirect(url_for('results.result_page'), link=link)
+
+@main.route("/about", methods=['GET', 'POST'])
+def about():
+    return render_template('about_us.html')
+
