@@ -1,5 +1,58 @@
 {% extends "layout.html" %}
 {% block content %}
+<html lang="en">
+<link rel="stylesheet" href="static/css/styles.css">
+<script></script>
+
+
+
+<head>
+<style>
+
+
+
+</style>
+<title>Results</title>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hamburger").click(function(){
+    $("#menu").slideToggle("slow");
+  });
+});
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+
+</script>
+
+
+
+
+
+<div id="div11" img src="" width=120 height=120 alt=".." class="center"></div>
+<br>
+<div id="div22" img src="" width=120 height=120 alt=".." class="center"></div>
+<br>
+<div id="div33" img src="" width=120 height=120 alt=".." class="center"></div>
+
+<ul class="nav";>
+  <li><a href="#CV">Video</a></li>
+  <li><a href="#Website">Podcast</a></li>
+  <li><a href="#info">Papers</a></li>
+  <li><a href="#Contact">Books</a></li>
+</ul>
+
+
     <header class="masthead">
         <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
             <div class="d-flex justify-content-center">
@@ -11,18 +64,37 @@
                     </iframe>
             </div>
         </div>
+
+  <span>Menu</span>
+  <button id="hamburger">&#9776;</button>
     </header>
+
+<div id="menu">
+  <ul>
+    <a href="#centerl"><li>Your section</li></a>
+    <a href="#center"><li>History</li></a>
+    <a href="#center2"><li>Adding on your list</li></a>
+    <a href="#center3"><li>Elements removed</li></a>
+    <a href="#center4"><li>Projects</li></a>
+  </ul>
+</div>
+
+<div style="text-align: center;">
+<img src="background.jpg" width=120 height=120 alt="Photo" class="center";>
+</div>
+<body bgcolor="ice"; style= "font-family: Verdana, Geneva, sans-serif; font-size: 16px; font-style: normal;">
+
+
+
+
+<html>
+
+
 
     <section class="about-section text-center" id="about">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8">
-                    <h2 class="text-white mb-4">Built with Bootstrap 5</h2>
-                    <p class="text-white-50">
-                        Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-                        <a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>
-                        The theme is open source, and you can use it for any purpose, personal or commercial.
-                    </p>
                 </div>
             </div>
             <img class="img-fluid" src="../static/assets/img/ipad.png" alt="..." />

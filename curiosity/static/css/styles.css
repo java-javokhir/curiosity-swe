@@ -92,6 +92,100 @@ body {
   margin-top: 15px;
 }
 
+<!--  -->
+
+.results-p.center {
+  text-align: center;
+  font-size: 200%;
+  color: white;
+  border: 4px solid white;
+  padding: 35px;
+}
+
+.results-p.large {
+  font-size: 300%;
+  border: 4px solid white;
+  padding: 35px;
+}
+
+.results-p.center2 {
+  text-align: center;
+  font-size: 150%;
+  border: 4px solid white;
+  padding: 35px;
+}
+
+.results-p.center3 {
+  text-align: center;
+  font-size: 150%;
+  border: 4px solid white;
+  padding: 35px;
+}
+
+.results-p.center4 {
+  text-align: center;
+  font-size: 150%;
+  border: 4px solid white;
+  padding: 35px;
+}
+
+
+
+
+.results-h1, h2 {
+  color: White;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.results-h3 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.results-p {
+  color: white;
+}
+
+.results-li {
+   color: white;
+   text-shadow: 2px 2px 4px #000000;
+}
+
+
+.results-body {
+  background-color: grey ;
+}
+
+.results-.nav {
+  background-color: white ;
+  list-style-type:none;
+  text-align:center;
+  text-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.results-.nav li {
+  text-shadow: 2px 2px 4px white;
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.results-#flip, #panel {
+  padding: 5px;
+  text-align: center;
+  background-color: tomato;
+  border: solid 1px #c3c3c3;
+}
+
+.results-#panel {
+  padding: 50px;
+  display: none;
+}
+
 
 
 <!--  -->
@@ -101,7 +195,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/_e61684c9-0eb3-417f-a428-a15909714211.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/landing.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -247,6 +341,9 @@ body {
   height: 50px;
   width: 110px;
   background: blue;
+<<<<<<< HEAD
+}
+=======
 }
 
 #ale-linkedin, #java-linkedin, #dilyan-linkedin {
@@ -348,3 +445,4 @@ body {
   border-radius: 50%;
 }
 
+>>>>>>> 877f395464b4f5f78bec49129dd02269fb535745
